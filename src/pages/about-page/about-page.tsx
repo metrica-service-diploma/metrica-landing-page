@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { Heading, Text, Flex } from "@chakra-ui/react";
 import { AchievementBlock } from "../../components/achievement-block";
+import { metricaTracker } from "../../utils/metrica-tracker";
 
 export const AboutPage = () => {
   useEffect(() => {
-    // tracker.pageview("/about");
+    metricaTracker.sendPageViewEvent();
   }, []);
 
   return (

@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { Heading, Text, Button, Flex } from "@chakra-ui/react";
+import { metricaTracker } from "../../utils/metrica-tracker";
 
 export const HomePage: React.FC = () => {
   useEffect(() => {
-    // tracker.pageview("/")
+    metricaTracker.sendPageViewEvent();
   }, []);
 
   return (

@@ -7,6 +7,7 @@ import {
   Button,
   Flex,
 } from "@chakra-ui/react";
+import { metricaTracker } from "../../utils/metrica-tracker";
 
 export const ContactsPage = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +17,7 @@ export const ContactsPage = () => {
   });
 
   useEffect(() => {
-    // tracker.pageview("/contact");
+    metricaTracker.sendPageViewEvent();
   }, []);
 
   const handleSubmit = (e: React.FormEvent) => {

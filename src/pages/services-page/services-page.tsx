@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { Heading, Flex } from "@chakra-ui/react";
 import { ServiceBlock } from "../../components/service-block";
+import { metricaTracker } from "../../utils/metrica-tracker";
 
 export const ServicesPage = () => {
   useEffect(() => {
-    // tracker.pageview("/services");
+    metricaTracker.sendPageViewEvent();
   }, []);
 
   return (
