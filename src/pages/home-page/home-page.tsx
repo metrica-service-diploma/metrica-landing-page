@@ -20,13 +20,7 @@ export const HomePage: React.FC = () => {
       <Text fontSize="lg" marginBottom={6}>
         Это главная страница нашего лендинга.
       </Text>
-      <Button
-        onClick={() => {
-          // tracker.event("click", "hero_button");
-        }}
-      >
-        Узнать больше
-      </Button>
+      <Button>Узнать больше</Button>
     </Flex>
   );
 };

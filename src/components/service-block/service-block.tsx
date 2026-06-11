@@ -19,13 +19,6 @@ export const ServiceBlock: React.FC<ServiceBlockProps> = ({ name, price }) => (
     <Text fontSize="xl" color="green.600" fontWeight="bold">
       {price}
     </Text>
-    <Button
-      size="sm"
-      onClick={() => {
-        // tracker.event("click", `service_${service.id}`);
-      }}
-    >
-      Заказать
-    </Button>
+    <Button size="sm">Заказать</Button>
   </Flex>
 );
